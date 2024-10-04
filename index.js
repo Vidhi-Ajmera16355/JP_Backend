@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || "http://localhost:5173", // Adjust as necessary
+  origin: "https://jp-frontend-theta.vercel.app/" || "http://localhost:5173", // Adjust as necessary
   credentials: true,
 };
 
